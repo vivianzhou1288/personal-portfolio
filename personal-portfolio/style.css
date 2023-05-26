@@ -1,0 +1,167 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  /* Typography */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+
+body{
+  background-color: black;
+}
+
+/*Navbar*/
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  font-size: 1.25rem;
+  background: black;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 3rem;
+  list-style: none;
+  text-align: right;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 5rem;
+  padding-left: 5rem;
+  font-family: 'Kavoon', cursive;
+}
+
+ul li {
+  padding: 25px 25px;
+}
+
+.navbar a {
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Intro*/
+.border1{
+  border: 4px inset white;
+  display: flex;
+}
+
+.title-intro{
+  margin-bottom: 0.25em;
+  font-size: var(--h1);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.welcome{
+  font-size: 2.0rem;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 1.0rem;
+  background-color: white;
+  color: black;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 30rem;
+  display: flex;
+}
+
+.description {
+  font-size: var(--h4);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+}
+
+.about-me {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image img {
+  width: 30rem;
+  margin-right: 15rem;
+  margin-bottom: 3rem;
+  margin-left: -10rem;
+}
+
+.texts {
+  flex-basis: 70%;
+  margin-bottom: 15%;
+  padding: 30px 150px;
+  color: white;
+}
+
+/*Education*/
+.education2 {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 10rem;
+}
+.title-education {
+  margin-top: 30rem;
+  font-size: var(--h2);
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  background-color: white;
+  width: 30rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cornell {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.texts {
+  flex-basis: 65%;
+  font-size: var(--h2);
+  font-family: 'Roboto Mono', monospace;
+}
+.texts p {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.logo img {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 15rem;
+}
+.tech {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
