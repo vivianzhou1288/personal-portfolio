@@ -103,14 +103,7 @@ ul li {
 .about-me {
   margin-top: 5%;
   display: flex;
-  justify-content: space-between;
-}
-
-.image img {
-  width: 30rem;
-  margin-right: 15rem;
-  margin-bottom: 3rem;
-  margin-left: -10rem;
+  
 }
 
 .texts {
@@ -121,47 +114,100 @@ ul li {
 }
 
 /*Education*/
-.education2 {
+.title-education {
   width: 80%;
   margin: auto;
-  text-align: left;
+  text-align: center;
   padding-top: 10rem;
 }
-.title-education {
-  margin-top: 30rem;
-  font-size: var(--h2);
+
+.title-education h1{
+  font-size: var(--h3);
   font-family: 'Roboto Mono', monospace;
-  color: black;
-  background-color: white;
-  width: 30rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  color: white;
 }
 
-.cornell {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
+.education2{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
 }
-.texts {
-  flex-basis: 65%;
-  font-size: var(--h2);
+
+.education2:after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.container{
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+
+.text-box{
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 4.0rem;
   font-family: 'Roboto Mono', monospace;
 }
-.texts p {
-  font-size: 3rem;
-  margin-top: 2rem;
+.left-container{
+  left: 0;
 }
-.logo img {
-  width: 20rem;
-  height: 20rem;
-  margin-left: 15rem;
+.right-container{
+  left: 50%;
 }
-.tech {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10%;
+
+.container img{
+  position: absolute;
+  width: 60px;
+  border-radius: 50%;
+  right: -30px;
+  top: 32px;
+  z-index: 10;
+}
+
+.text-box h2{
+  font-weight: 600;
+}
+
+.text-box small{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.right-container img{
+  left: -30px;
+}
+
+.left-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 38px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  right: -15px;
+}
+
+.right-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 38px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  left: -15px;
 }
