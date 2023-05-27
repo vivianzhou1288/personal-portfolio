@@ -211,3 +211,36 @@ ul li {
   border-right: 15px solid white;
   left: -15px;
 }
+
+/*Experience*/
+.title-experience {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.title-experience h1{
+  font-size: var(--h3);
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+.experience2{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.experience2:after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
