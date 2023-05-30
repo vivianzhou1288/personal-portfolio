@@ -67,6 +67,7 @@ ul li {
 .border1{
   border: 4px inset white;
   display: flex;
+  margin: auto;
 }
 
 .title-intro{
@@ -101,7 +102,7 @@ ul li {
 }
 
 .about-me {
-  margin-top: 5%;
+  margin-top: 5% auto;
   display: flex;
   
 }
@@ -211,6 +212,34 @@ ul li {
   border-right: 15px solid white;
   left: -15px;
 }
+
+/*Relevant Coursework*/
+.coursework{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: var(--h2);
+}
+
+.rows{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class{
+  flex-basis: 50%;
+}
+
+.class img{
+  width: 20%;
+  margin-bottom: 2rem;
+}
+
+
 
 /*Experience*/
 .title-experience {
